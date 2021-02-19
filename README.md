@@ -14,7 +14,7 @@ Refer to the [apis-emulator_specification](#anchor1)  for more information.
 Here is how to install apis-emulator individually.  
 
 ```bash
-$ git clone https://github.com/SonyCSL/apis-emulator.git
+$ git clone https://github.com/hyphae/apis-emulator.git
 $ cd apis-emulator
 $ python3 -m venv venv 
 $ . venv/bin/activate
@@ -42,12 +42,12 @@ $ deactivate
 ```
 <a id="anchor1"></a>
 ## Documentation
-&emsp;[apis-emulator_specification(EN)](https://github.com/SonyCSL/apis-emulator/blob/master/doc/en/apis-emulator_specification_en.md)  
-&emsp;[apis-emulator_specification(JP)](https://github.com/SonyCSL/apis-emulator/blob/master/doc/jp/apis-emulator_specification.md)
+&emsp;[apis-emulator_specification(EN)](https://github.com/hyphae/apis-emulator/blob/master/doc/en/apis-emulator_specification_en.md)  
+&emsp;[apis-emulator_specification(JP)](https://github.com/hyphae/apis-emulator/blob/master/doc/jp/apis-emulator_specification.md)
 
 
 ## License
-&emsp;[Apache License Version 2.0](https://github.com/oes-github/apis-emulator/blob/master/LICENSE)
+&emsp;[Apache License Version 2.0](https://github.com/hyphae/apis-emulator/blob/master/LICENSE)
 
 ## Notice
 &emsp;[Notice](https://github.com/oes-github/apis-emulator/blob/master/NOTICE.md)
