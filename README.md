@@ -50,4 +50,4 @@ $ deactivate
 &emsp;[Apache License Version 2.0](https://github.com/hyphae/apis-emulator/blob/master/LICENSE)
 
 ## Notice
-&emsp;[Notice](https://github.com/oes-github/apis-emulator/blob/master/NOTICE.md)
+&emsp;[Notice](https://github.com/hyphae/apis-emulator/blob/master/NOTICE.md)
