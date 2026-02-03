@@ -10,4 +10,4 @@ Instead, please send a detailed email to:
 The email should include:
 * A clear description of the vulnerability.
 * Steps to reproduce the vulnerability.
-* The affected version(s) of the project.
+* The affected version(s) of the project
