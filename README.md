@@ -1,4 +1,5 @@
 # apis-emulator
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/hyphae/apis-emulator/badge)](https://scorecard.dev/viewer/?uri=github.com/hyphae/apis-emulator)
 
 ## Introduction
 The Emulator runs a computer emulation that reproduces the hardware system for energy sharing, including the battery system and the DC/DC converter, etc. The Emulator reads in data on the amount of solar radiation and the power consumption of residences and emulates the flow of energy such as the power generated and consumed by multiple residences, and battery system charging and discharging. The emulation conditions can be changed in real time by using a Web browser to access and change the hardware parameters. There is also a function for communication with apis-main, which reads storage battery data from the hardware emulation on the computer and operates the DC/DC converter to emulate energy sharing.
