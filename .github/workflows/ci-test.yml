@@ -1,0 +1,41 @@
+name: Python CI Build Test
+
+permissions:
+  contents: read
+  actions: read
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 #v4
+
+      - name: Set up Python
+        uses: actions/setup-python@42375524e23c412d93fb67b49958b491fce71c38 # v5.4.0
+        with:
+          python-version: "3.x" #pulls the latest python 3 version
+          cache: "pip"
+
+      - name: Upgrade pip
+        run: pip install --upgrade pip
+
+      - name: Install requirements
+        run: pip install -r requirements.txt
+
+      - name: Run Emulator
+        # pls note this job runs the emulator and handles timeout to force stop server so that the build doesnt run indefinitely
+        run: |
+          timeout 10s python3 startEmul.py 4 || code=$?
+          if [ $code -eq 124 ]; then
+            echo "Status: Server exited via timeout as expected"
+          else
+            echo "Failed with exit code $code"
+            exit $code
+          fi
