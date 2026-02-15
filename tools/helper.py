@@ -75,7 +75,7 @@ def getNetworkInfo(msg):
         raise "Could not find an ethernet interface that can be used as local server (only eth0 and eth1 is supported)"
     logger.info(eth_int)
     
-    if 'net0' in netifaces.interfaces() or 'en0' in netifaces.interfaces() :
+    if 'net0' or 'en0' in netifaces.interfaces() :
         if (netifaces.AF_LINK in eth_int):
             msg['mac'] = eth_int[netifaces.AF_LINK][0]["addr"]
     else:
