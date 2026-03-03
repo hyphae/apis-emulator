@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/Users/palakgoyal/hyphae/apis-emulator/./startEmul.py", line 13, in <module>
+    import core as core
+  File "/Users/palakgoyal/hyphae/apis-emulator/core.py", line 13, in <module>
+    import analyser
+  File "/Users/palakgoyal/hyphae/apis-emulator/analyser.py", line 8, in <module>
+    import json, csv, requests
+  File "/Users/palakgoyal/hyphae/apis-emulator/venv/lib/python3.13/site-packages/requests/__init__.py", line 43, in <module>
+    import urllib3
+  File "/Users/palakgoyal/hyphae/apis-emulator/venv/lib/python3.13/site-packages/urllib3/__init__.py", line 7, in <module>
+    from .connectionpool import HTTPConnectionPool, HTTPSConnectionPool, connection_from_url
+  File "/Users/palakgoyal/hyphae/apis-emulator/venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 11, in <module>
+    from .exceptions import (
+    ...<13 lines>...
+    )
+  File "/Users/palakgoyal/hyphae/apis-emulator/venv/lib/python3.13/site-packages/urllib3/exceptions.py", line 2, in <module>
+    from .packages.six.moves.http_client import IncompleteRead as httplib_IncompleteRead
+ModuleNotFoundError: No module named 'urllib3.packages.six.moves'
