@@ -5,6 +5,7 @@ Created on Aug 3, 2015
 @author: annette
 
 '''
+from pydoc import html
 import json, time, threading, logging.config, sys
 
 from bottle import route, run, template, static_file, request, response
@@ -174,7 +175,7 @@ def setEmu(oesid):
         if key in gl.oesunits[oesid]["emu"] :
             gl.oesunits[oesid]["emu"][key] = float(value)
         else :
-            return "following key not found: "+key
+            return json.dumps({"error": "following key not found", "key": html.escape(key)})
     return gl.oesunits
 
 @route('/set/dcdc/<oesid>', method='GET')
