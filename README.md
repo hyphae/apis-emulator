@@ -12,16 +12,12 @@ Refer to the [apis-emulator_specification](#anchor1)  for more information.
 
 
 ## Installation
-Here is how to install apis-emulator individually.  
+Here is how to install apis-emulator individually. It will require UV to be installed (or install using `sh scripts/install-uv.sh`)  
 
 ```bash
 $ git clone https://github.com/hyphae/apis-emulator.git
 $ cd apis-emulator
-$ python3 -m venv venv 
-$ . venv/bin/activate
-$ pip install --upgrade pip
-$ pip install -r requirements.txt
-$ deactivate
+$ sh scripts/venv.sh
 ```
 
 ## Running
@@ -29,8 +25,7 @@ Here is how to run apis-emulator individually.
 
 ```bash
 $ cd apis-emulator
-$ . venv/bin/activate
-$ python3 startEmul.py 4
+$ sh scripts/start 3
 　(The last number is the number of hardware you want to emulate.)
 ```
 
@@ -38,8 +33,7 @@ $ python3 startEmul.py 4
 Here is how to stop apis-emulator individually.  
 
 ```bash
-$ bash stop.sh
-$ deactivate
+$ sh scripts/stop.sh
 ```
 <a id="anchor1"></a>
 ## Documentation
