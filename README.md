@@ -17,7 +17,7 @@ Here is how to install apis-emulator individually. It will require UV to be inst
 ```bash
 $ git clone https://github.com/hyphae/apis-emulator.git
 $ cd apis-emulator
-$ sh scripts/venv.sh
+$ bash scripts/venv.sh
 ```
 
 ## Running
@@ -25,7 +25,7 @@ Here is how to run apis-emulator individually.
 
 ```bash
 $ cd apis-emulator
-$ sh scripts/start 3
+$ bash scripts/start.sh 3
 　(The last number is the number of hardware you want to emulate.)
 ```
 
@@ -33,7 +33,7 @@ $ sh scripts/start 3
 Here is how to stop apis-emulator individually.  
 
 ```bash
-$ sh scripts/stop.sh
+$ bash scripts/stop.sh
 ```
 <a id="anchor1"></a>
 ## Documentation

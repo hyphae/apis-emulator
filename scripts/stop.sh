@@ -11,6 +11,6 @@ if [ -z "$PIDS" ]; then
     exit 0
 fi
 
-echo "$PIDS" | xargs kill
+ echo "$PIDS" | xargs kill || echo "Warning: some PIDs could not be killed (already stopped?)" >&2
 
 echo "Stopped."
