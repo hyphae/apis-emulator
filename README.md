@@ -17,6 +17,9 @@ Here is how to install apis-emulator individually. It will require UV to be inst
 ```bash
 $ git clone https://github.com/hyphae/apis-emulator.git
 $ cd apis-emulator
+# install UV for virtual environment management if not already installed
+$ bash scripts/install-uv.sh
+# if already installed, then just install dependencies
 $ bash scripts/venv.sh
 ```
 
